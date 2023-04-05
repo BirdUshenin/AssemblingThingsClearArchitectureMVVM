@@ -1,7 +1,8 @@
-package com.birdushenin.assemblingthings
+package com.birdushenin.assemblingthings.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.birdushenin.assemblingthings.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
