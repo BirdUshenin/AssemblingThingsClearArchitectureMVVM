@@ -42,7 +42,8 @@ class ShopListAdapter : RecyclerView.Adapter<ShopListAdapter.ShopItemViewHolder>
         if (shopItem.enabled) {
             viewHolder.tvName.text = "${shopItem.name} $status"
             viewHolder.tvCount.text = shopItem.count.toString()
-            viewHolder.tvName.setTextColor(ContextCompat.getColor(viewHolder.view.context, android.R.color.holo_red_light))
+            viewHolder.tvName.setTextColor(ContextCompat.getColor(viewHolder.view.context,
+                android.R.color.holo_red_light))
         }
     }
 
@@ -50,7 +51,8 @@ class ShopListAdapter : RecyclerView.Adapter<ShopListAdapter.ShopItemViewHolder>
         super.onViewRecycled(viewHolder)
         viewHolder.tvName.text = ""
         viewHolder.tvCount.text = ""
-        viewHolder.tvName.setTextColor(ContextCompat.getColor(viewHolder.view.context, android.R.color.white))
+        viewHolder.tvName.setTextColor(ContextCompat.getColor(viewHolder.view.context,
+            android.R.color.white))
     }
 
     override fun getItemCount(): Int {
