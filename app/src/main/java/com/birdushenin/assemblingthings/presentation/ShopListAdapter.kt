@@ -1,6 +1,5 @@
 package com.birdushenin.assemblingthings.presentation
 
-
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +9,6 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.birdushenin.assemblingthings.R
 import com.birdushenin.assemblingthings.domain.ShopItem
-
 
 class ShopListAdapter : RecyclerView.Adapter<ShopListAdapter.ShopItemViewHolder>() {
 
