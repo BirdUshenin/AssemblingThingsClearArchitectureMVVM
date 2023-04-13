@@ -7,7 +7,7 @@ import com.birdushenin.assemblingthings.domain.EditShopItemUseCase
 import com.birdushenin.assemblingthings.domain.GetShopListUseCase
 import com.birdushenin.assemblingthings.domain.ShopItem
 
-class MainViewModel: ViewModel() {
+class MainViewModel : ViewModel() {
 
     private val repository = ShopListRepositoryImpl
 
@@ -17,7 +17,6 @@ class MainViewModel: ViewModel() {
 
     val shopList = getShopListUseCase.getShopList()
 
-
     fun deleteShopItem(shopItem: ShopItem) {
         deleteShopItemUseCase.deleteShopItem(shopItem)
     }
@@ -26,5 +25,4 @@ class MainViewModel: ViewModel() {
         val newItem = shopItem.copy(enabled = !shopItem.enabled)
         editShopItemUseCase.editShopItem(newItem)
     }
-
 }
