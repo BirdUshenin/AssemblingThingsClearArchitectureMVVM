@@ -5,9 +5,19 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
+import android.widget.EditText
 import com.birdushenin.assemblingthings.R
+import com.google.android.material.textfield.TextInputLayout
 
 class ShopItemActivity : AppCompatActivity() {
+
+    private lateinit var tilName: TextInputLayout
+    private lateinit var tilCount: TextInputLayout
+    private lateinit var etName: EditText
+    private lateinit var etCount: EditText
+    private lateinit var buttonSave: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shop_item)
