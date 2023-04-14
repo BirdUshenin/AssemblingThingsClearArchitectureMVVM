@@ -43,7 +43,6 @@ class ShopListAdapter : ListAdapter<ShopItem, ShopItemViewHolder>(ShopItemDiffCa
         }
     }
 
-
     companion object {
 
         const val VIEW_TYPE_ENABLED = 100

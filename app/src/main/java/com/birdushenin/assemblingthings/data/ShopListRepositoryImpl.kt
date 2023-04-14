@@ -4,7 +4,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.birdushenin.assemblingthings.domain.ShopItem
 import com.birdushenin.assemblingthings.domain.ShopListRepository
-import kotlin.random.Random
 
 object ShopListRepositoryImpl : ShopListRepository {
 
@@ -13,12 +12,16 @@ object ShopListRepositoryImpl : ShopListRepository {
 
     private var autoIncrementId = 0
 
-    init {
-        for (i in 0 until 1000) {
-            val item = ShopItem("Name $i", i, Random.nextBoolean())
-            addShopItem(item)
-        }
-    }
+    /******************************
+    *      Для тестирования       *
+    ******************************/
+
+//    init {
+//        for (i in 0 until 1) {
+//            val item = ShopItem("Name $i", i, Random.nextBoolean())
+//            addShopItem(item)
+//        }
+//    }
 
     override fun addShopItem(shopItem: ShopItem) {
         if (shopItem.id == ShopItem.UNDEFINED_ID) {
