@@ -9,7 +9,7 @@ import com.birdushenin.assemblingthings.domain.EditShopItemUseCase
 import com.birdushenin.assemblingthings.domain.GetShopItemUseCase
 import com.birdushenin.assemblingthings.domain.ShopItem
 
-class ShopItemViewModel: ViewModel() {
+class ShopItemViewModel : ViewModel() {
 
     private val repository = ShopListRepositoryImpl
 
@@ -17,9 +17,7 @@ class ShopItemViewModel: ViewModel() {
     private val addShopItemUseCase = AddShopItemUseCase(repository)
     private val editShopItemUseCase = EditShopItemUseCase(repository)
 
-
     private val _errorInputName = MutableLiveData<Boolean>()
-
     val errorInputName: LiveData<Boolean>
         get() = _errorInputName
 
@@ -89,11 +87,11 @@ class ShopItemViewModel: ViewModel() {
         return result
     }
 
-    private fun resetErrorInputName() {
+    fun resetErrorInputName() {
         _errorInputName.value = false
     }
 
-    private fun resetErrorInputCount() {
+    fun resetErrorInputCount() {
         _errorInputCount.value = false
     }
 
