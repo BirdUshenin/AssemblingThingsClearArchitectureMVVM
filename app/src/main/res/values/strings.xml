@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AssemblingThingsClearArchitectureMVVM</string>
+    <string name="app_name">Что взять с собой?</string>
     <string name="add_shop_item_content_description">Add new shop item</string>
     <string name="title_activity_shop_item">ShopItemActivity</string>
     <!-- Strings used for fragments for navigation -->
